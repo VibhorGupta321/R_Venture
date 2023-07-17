@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Rventure-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".HomePage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/light_grey"
+            android:text="Welcome!"
+            android:padding="10dp"
+            android:textSize="50sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/grey"
+            android:text="Choose a Category"
+            android:paddingLeft="10dp"
+            android:textSize="25sp"/>
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rentInCard"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="0dp"
+            android:background="@drawable/rentout_image"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:padding="15dp"
+                android:text="Lend a Bike"
+                android:textSize="25dp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/rentOutCard"
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:background="@drawable/rentin_image"
+            android:focusable="true">
+
+            <TextView
+                android:elevation="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/aclonica"
+                android:gravity="center_horizontal"
+                android:padding="9dp"
+                android:text="Rent a Bike"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use the Useless"
+            android:textColor="@color/dark_grey"
+            android:fontFamily="cursive"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
